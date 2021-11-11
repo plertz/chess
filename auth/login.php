@@ -3,12 +3,19 @@
     <head>
         <?php
             include "../includes/head.php";
-            include "../includes/style.php"
+            include "login/head.php";
+            include "../includes/auth.php";
+            $signedIN =auth("../");
+            if ($signedIN) {
+                header("Location: ../index.php");
+            } 
         ?>
     </head>
     <body>
-        <?php
-            include "login/form.php";
-        ?>
+        <div id="auth-wrapper">
+            <?php
+                include "login/form.php";
+            ?>
+        </div>
     </body>
 </html>

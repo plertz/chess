@@ -2,7 +2,6 @@
 <html>
     <head>
         <?php
-        include "../includes/style.php";
         include "../includes/head.php";
         ?>
     </head>
