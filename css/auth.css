@@ -10,6 +10,10 @@ html{
     position: relative;
 }
 
+label {
+    font-weight: bold;
+}
+
 .login_form{
     display: flex;
     justify-content: center;
@@ -137,5 +141,112 @@ legend{
     font-size: 1.4rem;
     font-weight: bold;
 }
+
+.signup_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(40, 40, 40);
+    width: 40rem;
+    height: 40rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
+}
+
+.sign-field {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(8, 1fr);
+    position: relative;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sign-field div{
+    align-self: center;
+    justify-self: center;
+    width: 10rem;
+}
+
+.sign-field div input {
+    border-radius: 5px;
+    padding: 0 0.3rem;
+    height: 2rem;
+}
+
+.sign-field div:nth-child(1), .sign-field div:nth-child(2), .sign-field div:nth-child(3){
+    grid-row: 2;
+
+}
+
+.sign-field div:nth-child(4){
+    grid-row: 3;
+} 
+
+.sign-field div:nth-child(5) {
+    grid-row: 4;
+}
+
+.sign-field div:nth-child(6), .sign-field div:nth-child(7){
+    grid-row: 5;
+}
+
+.sign-field div:nth-child(8), .sign-field div:nth-child(9){
+    grid-row: 6;
+}
+
+.sign-field div:nth-child(10){
+    grid-row:7;
+}
+
+.sign-field div:nth-child(11){
+    grid-row: 7;
+    grid-column: 3;
+}
+
+.sign-field div:nth-child(11){
+    display: flex;
+    align-self: center;
+    background-color: blue;
+    width: 11rem;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 5px;
+    margin-left: 0.3rem;
+
+
+}
+.sign-field div:nth-child(11) a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.sign-field div:nth-child(10) input:hover{
+    cursor: pointer;
+}
+
+.sign-field div:nth-child(10) input{
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 11rem;
+}
+
 
 
