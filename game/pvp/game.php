@@ -12,8 +12,10 @@
         ?>
     </head>
     <body>
-    <?php 
-    echo $_SESSION["username"];
-    ?>
+        <?php 
+        echo $_SESSION["username"];
+        ?>
+        <br>
+        <button onclick="search_opponent('game/search_opponent.php').then(data => {console.log(data)});">Search</button>
     </body>
 </html>

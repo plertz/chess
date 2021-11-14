@@ -12,7 +12,16 @@ $session = $_SESSION['session_id'];
 $set = check_set($username);
 
 if (!$set) {
-    $search_id = Wait_list($username, $session);
-    echo "Search: " . $search_id;
+    Wait_list($username, $session); //avoid double search_id
 }
+
+$search_id = get_id($username);
+
+while (true) {
+    $opponent = search_player($search_id);
+    if($opponent != null){
+        break;
+    }
+}
+echo $opponent;
 ?>
