@@ -11,6 +11,6 @@
     <body>
         <a href="auth/login.php">login</a>
         <a href="auth/signup.php">Signup</a>
-        <a href="game/pvp/game.php">Games</a>
+        <a href="game/pvp">Games</a>
     </body>
 </html>
