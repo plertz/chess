@@ -5,7 +5,7 @@
             include "../../includes/general/auth.php";
             $loggedIn = auth("../../");
             if (!$loggedIn) {
-                header("Location: ../../auth/login.php");
+                header("Location: ../../auth/login");
             }
             include "../../includes/general/head.php";
             include "../../includes/game/head.php";

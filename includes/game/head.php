@@ -1,1 +1,1 @@
-<script src="../../js/search.js"></script>
+<script src="../../includes/js/search.js"></script>

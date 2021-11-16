@@ -1,3 +1,3 @@
-<link rel="stylesheet" href="../../css/style.css">
-<link rel="stylesheet" href="../../css/auth.css">
-<script src="../../js/login.js" defer></script>
+<link rel="stylesheet" href="../../includes/css/style.css">
+<link rel="stylesheet" href="../../includes/css/auth.css">
+<script src="../../includes/js/login.js" defer></script>
