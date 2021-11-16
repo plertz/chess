@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <a href="auth/login.php">login</a>
-        <a href="auth/signup.php">Signup</a>
-        <a href="game/pvp/game.php">Games</a>
+        <a href="auth/login">login</a>
+        <a href="auth/signup">signup</a>
+        <a href="game/pvp/">Games</a>
     </body>
 </html>

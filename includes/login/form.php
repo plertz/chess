@@ -1,5 +1,5 @@
 <div class="login_form">
-    <form action="login/login.php" method="post" autocomplete="off">
+    <form action="../../includes/login/login.php" method="post" autocomplete="off">
         <fieldset>
             <legend>Login</legend>
             <div class="input-field">
@@ -17,7 +17,7 @@
                     <input type="submit" value="login">
                 </div>
                 <div class="input">
-                    <a href="signup.php">Signup</a>
+                    <a href="../signup">Signup</a>
                 </div>
             </div>                       
         </fieldset>   

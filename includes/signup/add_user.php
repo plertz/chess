@@ -11,10 +11,10 @@ function addUser($naam, $tusvg, $lastName, $user, $birth, $email, $phone, $pass,
         $sql = "INSERT INTO passwords ('username', 'password') VALUES ('$user', '$hashed')";
         $db->exec($sql);
         $db = null;
-        header("location: ../login.php");
+        header("location: ../../auth/login/");
     }
     else {
-        header("location: ../signup.php");
+        header("location: ../../auth/signup/");
     }
 }
 ?>
