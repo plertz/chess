@@ -1,21 +1,31 @@
 <?php
 header("Cache-Control: no-cache");
 header("Content-Type: text/event-stream");
+include "../general/auth.php";
+include "connect.php";
 
-$data = "hello";
+$loggedIn = auth("../../");
+if (!$loggedIN) {
+    header("Location ../../"); 
+}
 
-// while (true) {
-//     //functions here
+$username = $_SESSION["username"];
+if (!check_set($username)) {
+    set_active($username);
+}
+
+while (true) {
+    //functions here
     
-//     echo "data: " . json_encode($data) . "\n\n";
-//     sleep(1);
+    echo "data: " . json_encode($username) . "\n\n";
+    sleep(1);
 
-//     ob_end_flush();
-//     flush();
+    ob_end_flush();
+    flush();
 
-//     if (connection_aborted()) {
-//         //delete player from active_playerlist
-//         break;
-//     }
-// }
+    if (connection_aborted()) {
+        unset_active($username);
+        break;
+    }
+}
 ?>

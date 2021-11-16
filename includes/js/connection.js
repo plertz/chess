@@ -9,3 +9,8 @@ connection.onmessage = function(event) {
     const res = JSON.parse(event.data);
     console.log(res);
 }
+
+
+window.addEventListener("beforeunload", function(e){
+    fetch("../../includes/game/stop.php")
+ }, false);
