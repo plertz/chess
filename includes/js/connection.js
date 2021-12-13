@@ -10,7 +10,7 @@ connection.onmessage = function(event) {
     console.log(res);
 }
 
-
 window.addEventListener("beforeunload", function(e){
     fetch("../../includes/game/stop.php")
- }, false);
+    connection.close()
+ });

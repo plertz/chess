@@ -24,7 +24,6 @@ while (true) {
     flush();
 
     if (connection_aborted()) {
-        unset_active($username);
         break;
     }
 }
