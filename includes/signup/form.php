@@ -1,5 +1,5 @@
 <div class="signup_form">
-    <form action="../../auth/signup" method="post" autocomplete="off">
+    <form action="../../includes/signup/signup.php" method="post" autocomplete="off">
         <fieldset>
             <legend>Signup</legend>
             <div class="sign-field">

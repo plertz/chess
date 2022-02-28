@@ -1,7 +1,7 @@
 <?php
 function validate_password($username, $password){
     if (sqlProof($username)) {
-        $password = sha1($password);
+        // $password = sha1($password);
 
         $db = new PDO("sqlite:../../database/chess");
         $sql = "SELECT username, password FROM passwords WHERE username = '$username'";
