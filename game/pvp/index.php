@@ -16,7 +16,6 @@
         echo $_SESSION["username"];
         ?>
         <br>
-        <!-- <button onclick="search_opponent('game/search_opponent.php').then(data => {console.log(data)});">Search</button> -->
-        <!-- <button onclick="start_connection('../../include/game/connection.php').then(data => {console.log(data)});">connect</button> -->
+        <button onclick="search_opponent('../../includes/game/search_opponent.php').then(data => {console.log(data)});">Search</button> -->
     </body>
 </html>

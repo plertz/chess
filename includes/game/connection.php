@@ -14,6 +14,24 @@ if (!check_set($username)) {
     set_active($username);
 }
 
+$username = $_SESSION['username'];
+$session = $_SESSION['session_id'];
+class game {
+    public $username;
+    public $opponent;
+    public $player_1;
+    public $player_2;
+    public $current_turn = 0;
+    public $turn_counter = 0;
+    public $log = [];
+
+    function __construct($username){
+        $this->username = $username;
+    }
+}
+
+start_search($username, $session);
+
 while (true) {
     //functions here
     

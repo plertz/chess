@@ -1,4 +1,5 @@
 <?php
+//unnecessary
 function set_active($username){
     $db = new PDO("sqlite:../../database/chess");
     $sql = "INSERT INTO active_players (username) VALUES ('$username')";

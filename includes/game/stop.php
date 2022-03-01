@@ -1,4 +1,5 @@
 <?php
+//usless
 include "../general/auth.php";
 include "connect.php";
 session_start();
