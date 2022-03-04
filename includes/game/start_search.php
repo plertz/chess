@@ -1,10 +1,10 @@
 <?php 
-include "search.php";
-include "../../../includes/auth.php";
-$loggedIn = auth("../../../");
-if (!$loggedIn) {
-    header("Location: login.php");
-}
+// include "search.php";
+// include "../general/auth.php";
+// $loggedIn = auth("../../");
+// if (!$loggedIn) {
+//     header("Location: ../login/");
+// }
 class Queue_data{
     public $username;
     public $session;
@@ -18,33 +18,17 @@ function start_search($username, $session) {
     $queue_data = new Queue_data($username, $session);
     $data = json_encode($queue_data);
     $counter = 0;
-    foreach(glob('*.json') as $file) {
+    foreach(glob('../../database/active_players/*.json') as $file) {
         $counter++;
     }
     $file_num = $counter+=1;
+    $return_value = $file_num;
     $file_num = strval($file_num);
     $file_num = $file_num . ".json";
+    $file_num = "../../database/active_players/". $file_num;
     $file = fopen($file_num, "w");
     fwrite($file, $data);
     fclose($file);
+    return $return_value;
 }
-
-// $set = check_set($username);
-
-// if (!$set) {
-//     Wait_list($username, $session); //avoid double search_id
-// }
-
-// $search_id = get_id($username);
-
-// while (true) {
-//     $opponent = search_player($search_id);
-//     if($opponent != null){
-//         break;
-//     }
-// }
-// echo $opponent;
-
-
-
 ?>

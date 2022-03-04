@@ -3,15 +3,11 @@ header("Cache-Control: no-cache");
 header("Content-Type: text/event-stream");
 include "../general/auth.php";
 include "connect.php";
+include "start_search.php";
 
 $loggedIn = auth("../../");
 if (!$loggedIN) {
     header("Location ../../"); 
-}
-
-$username = $_SESSION["username"];
-if (!check_set($username)) {
-    set_active($username);
 }
 
 $username = $_SESSION['username'];
@@ -24,17 +20,18 @@ class game {
     public $current_turn = 0;
     public $turn_counter = 0;
     public $log = [];
+    public $board;
 
     function __construct($username){
         $this->username = $username;
+        $this->board = create_board();
     }
 }
 
-start_search($username, $session);
+$current_num = start_search($username, $session);
 
 while (true) {
     //functions here
-    
     echo "data: " . json_encode($username) . "\n\n";
     sleep(1);
 

@@ -11,6 +11,6 @@ connection.onmessage = function(event) {
 }
 
 window.addEventListener("beforeunload", function(e) {
-    fetch("../../includes/game/stop.php")
+    // fetch("../../includes/game/stop.php")
     connection.close()
 });
