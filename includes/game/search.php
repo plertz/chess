@@ -12,15 +12,16 @@
         $file_path = "../../database/active_players/" . $other_pnum . ".json";
         echo $file_path;
         try{
-            $file = fopen($file_path, "wr");
-            $data = fgets($file);
-            fclose($file);
-            echo $data;
+            $file = fopen($file_path, "r");
+            if($file){
+                $data = fgets($file);
+                fclose($file); 
+                $data = json_decode($data); 
+                return $data->username;
+            }          
         }
         catch(Exception $e){
-            return null;
-        }
-        echo "hello";
+        } 
+        return null;
     }
-    search_player(2)
 ?>

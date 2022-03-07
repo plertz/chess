@@ -24,9 +24,11 @@ class game {
 
     function __construct($username){
         $this->username = $username;
-        $this->board = create_board();
+        // $this->board = create_board();
     }
 }
+
+$Game = new game($username);
 
 $current_num = start_search($username, $session);
 
