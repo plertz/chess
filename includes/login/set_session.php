@@ -1,8 +1,8 @@
 <?php 
 function set_session($username){
     $user_id = get_user_id($username);
-    $session_token = create_session_token($user_id);
-    set_token($username, $session_token);
+    $session_token = create_session_token();
+    set_token($user_id, $session_token);
 
 }
 
@@ -15,17 +15,18 @@ function get_user_id($username){
     }
 }
 
-function create_session_token($userId){
+function create_session_token(){
     return rand(10000000, 999999999);
 }
 
-function set_token($username, $session_token){
+function set_token($user_id, $session_token){
     session_start();
     $db = new PDO("sqlite:../../database/chess");
-    $sql = "UPDATE users SET token_id = '$session_token' WHERE username = '$username'";
+    $sql = "UPDATE active_players SET token = '$session_token' WHERE user_id = '$user_id'";
+    // $sql = "INSERT INTO active_players (user_id, token) VALUES ('$user_id', '$session_token')";
     $db->exec($sql);
     $db = null;
-    $_SESSION["username"] = $username;
+    $_SESSION["user_id"] = $user_id;
     $_SESSION["session_id"] = $session_token;
 }
 ?>

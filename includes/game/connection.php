@@ -14,7 +14,7 @@ $username = $_SESSION['username'];
 $session = $_SESSION['session_id'];
 class game {
     public $username;
-    public $opponent;
+    public $opponent = null;
     public $player_1;
     public $player_2;
     public $current_turn = 0;
@@ -34,7 +34,10 @@ $current_num = start_search($username, $session);
 
 while (true) {
     //functions here
-    echo "data: " . json_encode($username) . "\n\n";
+    if ($Game->opponent == null) {
+        $Game->opponent = search_player($current_num);
+    }
+    echo "data: " . json_encode($game->opponent) . "\n\n";
     sleep(1);
 
     ob_end_flush();

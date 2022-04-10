@@ -1,4 +1,10 @@
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
     font-size: 16px;
 }
 
@@ -14,7 +20,7 @@ label {
     font-weight: bold;
 }
 
-.login_form{
+.login_form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +36,13 @@ label {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
 }
 
-form{
+form {
     width: 90%;
     height: 90%;
     display: block;
 }
 
-fieldset{
+fieldset {
     border: 1px solid white;
     width: 100%;
     height: 100%;
@@ -44,21 +50,20 @@ fieldset{
     border-radius: 12px;
 }
 
-legend{
+legend {
     margin-left: 5%;
     padding: 0 1rem;
-    font-size:  1.5rem;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: 900;
 }
 
-
-.input-field{
+.input-field {
     display: grid;
     position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1rem;
-    grid-template-rows:  2fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
     width: 90%;
     height: 90%;
     position: absolute;
@@ -67,38 +72,40 @@ legend{
     transform: translate(-50%, -50%);
 }
 
-.input-field div:nth-child(1), .input-field div:nth-child(2){
+.input-field div:nth-child(1),
+.input-field div:nth-child(2) {
     font-size: 1.1rem;
     align-self: center;
     justify-self: center;
     background-color: inherit;
 }
 
-.input-field div:nth-child(1) input, .input-field div:nth-child(2) input{
+.input-field div:nth-child(1) input,
+.input-field div:nth-child(2) input {
     font-size: 1.2rem;
     padding-left: 0.3rem;
 }
 
-.input input{
+.input input,
+.sign input {
     width: 16rem;
     height: 2rem;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-
-.input-field div:nth-child(1){
+.input-field div:nth-child(1) {
     grid-column: 1 / span 2;
     grid-row: 1;
 }
 
-.input-field div:nth-child(2){
+.input-field div:nth-child(2) {
     grid-column: 1 / span 2;
     grid-row: 2;
     position: relative;
     top: -0.8rem;
-}    
+}
 
-.input-field div:nth-child(3){
+.input-field div:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
     display: flex;
@@ -107,7 +114,7 @@ legend{
     align-items: center;
 }
 
-.input-field div:nth-child(3) input{
+.input-field div:nth-child(3) input {
     display: block;
     height: 100%;
     width: 100%;
@@ -116,11 +123,11 @@ legend{
     font-weight: bold;
 }
 
-.input-field div:nth-child(3) input:hover{
+.input-field div:nth-child(3) input:hover {
     cursor: pointer;
 }
 
-.input-field div:nth-child(4){
+.input-field div:nth-child(4) {
     grid-column: 2;
     grid-row: 3;
     display: flex;
@@ -132,7 +139,7 @@ legend{
     border-radius: 5px;
 }
 
-.input a{
+.input a {
     display: block;
     width: 100%;
     text-align: center;
@@ -142,17 +149,14 @@ legend{
     font-weight: bold;
 }
 
-.signup_form{
-    display: flex;
+.signup_form {
     justify-content: center;
-    align-items: center;
+    padding: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(40, 40, 40);
-    width: 40rem;
-    height: 40rem;
     border-radius: 12px;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
@@ -160,93 +164,61 @@ legend{
 
 .sign-field {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: repeat(8, 1fr);
-    position: relative;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    grid-template-columns: auto auto;
+    margin: 1rem;
+    font-size: 1.2rem;
 }
 
-.sign-field div{
-    align-self: center;
-    justify-self: center;
-    width: 10rem;
+.sign-field div {
+    margin: 0.5rem;
+    grid-column: 1 / span 2;
 }
 
-.sign-field div input {
-    border-radius: 5px;
-    padding: 0 0.3rem;
-    height: 2rem;
-}
-
-.sign-field div:nth-child(1), .sign-field div:nth-child(2), .sign-field div:nth-child(3){
-    grid-row: 2;
-
-}
-
-.sign-field div:nth-child(4){
-    grid-row: 3;
-} 
-
-.sign-field div:nth-child(5) {
+.sign-field div:nth-last-child(2) {
+    grid-column: 1;
     grid-row: 4;
 }
 
-.sign-field div:nth-child(6), .sign-field div:nth-child(7){
-    grid-row: 5;
+.sign-field div:nth-last-child(1) {
+    grid-column: 2;
+    grid-row: 4;
 }
 
-.sign-field div:nth-child(8), .sign-field div:nth-child(9){
-    grid-row: 6;
-}
-
-.sign-field div:nth-child(10){
-    grid-row:7;
-}
-
-.sign-field div:nth-child(11){
-    grid-row: 7;
-    grid-column: 3;
-}
-
-.sign-field div:nth-child(11){
-    display: flex;
-    align-self: center;
+.sign-field a {
     background-color: blue;
-    width: 11rem;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    height: 2rem;
-    border-radius: 5px;
-    margin-left: 0.3rem;
-
-
-}
-.sign-field div:nth-child(11) a{
     display: block;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
     font-weight: bold;
-    font-size: 1.3rem;
-    text-align: center;
-    width: 100%;
+    border-radius: 5px;
 }
 
-.sign-field div:nth-child(10) input:hover{
+.sign-field input {
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.2rem 0.1rem;
+}
+
+.sign-field div:nth-child(4),
+.sign-field div:nth-child(5) {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.sign-field div:nth-child(4) input {
+    display: block;
+    padding: 0.5rem 2rem;
+}
+
+.sign-field input:nth-child(4),
+.sign-field a {
+    text-align: center;
+    padding: 0.5rem 2rem;
+}
+
+input:hover {
     cursor: pointer;
 }
-
-.sign-field div:nth-child(10) input{
-    font-weight: bold;
-    font-size: 1.3rem;
-    width: 11rem;
-}
-
-
-

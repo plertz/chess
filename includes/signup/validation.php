@@ -25,18 +25,6 @@
         }
     }
 
-    function check_name($input){
-        if (sqlProof($input)) {
-            $forbidden_char = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", " "];
-            for ($i=0; $i < count($forbidden_char); $i++) { 
-                if(strpos($input, $forbidden_char[$i]) !== false){
-                    return false;
-                }
-            }
-            return true;
-        }
-    }
-
     function check($input){
         if(sqlProof($input)){
             return true;

@@ -8,7 +8,7 @@ if (isset($_POST['password']) && isset($_POST['uname'])) {
         header("Location: ../../");
     }
     else {
-        // header("Location: ../../auth/login");
+        header("Location: ../../auth/login");
         echo "error";
     }
 } 

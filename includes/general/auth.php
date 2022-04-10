@@ -1,14 +1,14 @@
 <?php 
 function auth($path){
     session_start();
-    if (isset($_SESSION["username"]) && $_SESSION["session_id"]) {
-        $username = $_SESSION["username"];
+    if (isset($_SESSION["user_id"]) && $_SESSION["session_id"]) {
+        $user_id = $_SESSION["user_id"];
         $session_id = $_SESSION["session_id"];
         $db = new PDO("sqlite:${path}database/chess");
-        $sql = "SELECT username, token_id FROM users WHERE username = '$username'";
+        $sql = "SELECT user_id, token FROM active_players WHERE user_id = '$user_id'";
         $result = $db->query($sql);
         foreach ($result as $row) {
-            if ($row["token_id"] == $session_id) {
+            if ($row["token"] == $session_id) {
                 return true;
             }
         }

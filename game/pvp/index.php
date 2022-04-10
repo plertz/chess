@@ -13,9 +13,7 @@
     </head>
     <body>
         <?php 
-        echo $_SESSION["username"];
+        echo $_SESSION["user_id"];
         ?>
-        <br>
-        <button onclick="search_opponent('../../includes/game/search_opponent.php').then(data => {console.log(data)});">Search</button> -->
     </body>
 </html>
