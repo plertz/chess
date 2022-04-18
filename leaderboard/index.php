@@ -9,15 +9,25 @@
         }
     ?>
     <meta charset="UTF-8">
-    <script src="../includes/js/search.js" defer></script>
-    <script type="text/javascript" src="../includes/js/navbar.js" defer></script>
-    <link href="../includes/css/style.css" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>players | Chess Online</title>
+    <link rel="stylesheet" href="../includes/css/style.css">
+    <script type="text/javascript" src="../includes/js/navbar.js" defer></script>
+    <title>Leaderboard | Chess Online</title>
 </head>
 <body>
-<div class="nav-wrapper">
+    <div class="leaderboard-container">
+        <table>
+        <?php
+            include "../includes/leaderboard/form.php";
+        ?>
+
+        <?php
+            include "../includes/leaderboard/search.php";
+        ?>
+        </table>
+    </div>
+    <div class="nav-wrapper">
         <div class="nav-background">
         </div>
         <div class="show-nav">
@@ -52,8 +62,5 @@
                 </li>
             </ul>
         </nav>
-    <?php
-    include "../includes/players/searchbar.php";
-    ?>
-</body>
+    </body>
 </html>

@@ -20,7 +20,10 @@
         $bot_matches = $row['bot_matches'];
         $bot_wins = $row['bot_wins'];
     }
-    echo $online_matches . "\n" . $online_wins . "\n" . $local_matches . "\n" . $local_wins . "\n" . $bot_matches . "\n" . $bot_wins;
+    $sql = "SELECT icon FROM icon WHERE user_id = $user_id";
+    $result = $db->query($sql);
+    foreach ($result as $row) {
+        $icon = $row['icon'];
+    }
     $db = null;
-    
 ?>

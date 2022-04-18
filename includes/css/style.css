@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(40, 40, 40);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 button:hover {
@@ -242,7 +242,6 @@ p {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
 }
 
 .nav-background {
@@ -252,7 +251,6 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.21);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.9px);
@@ -314,14 +312,11 @@ nav a {
 
 a:hover {
     cursor: pointer;
+    color: rgb(9, 9, 9);
 }
 
 .inside-nav-list li {
     margin-left: 2vw;
-}
-
-.inside-nav-list li:hover {
-    color: aqua;
 }
 
 .account-header {
@@ -509,7 +504,6 @@ a:hover {
     min-height: 100%;
     max-height: 100%;
     overflow-y: scroll;
-    scrollbar-track-color: aqua;
 }
 
 #search-wrapper ul li {
@@ -529,4 +523,68 @@ a:hover {
 
 #search-wrapper ul li a:hover {
     color: rgb(114, 109, 109);
+}
+
+
+/* leaderboard layout */
+
+.leaderboard-container {
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+}
+
+.leaderboard-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.leaderboard-container table a {
+    text-decoration: none;
+    color: white;
+}
+
+.leaderboard-container table a:hover {
+    text-decoration: underline;
+}
+
+.leaderboard-container table tr {
+    border: 1px white solid;
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+
+.leaderboard-container table tr:nth-child(1) {
+    background-color: rgb(68, 66, 66);
+    color: white;
+    text-align: center;
+}
+
+.leaderboard-container input,
+select {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.leaderboard-container input:hover,
+select:hover {
+    background-color: rgb(114, 114, 114);
+    cursor: pointer;
+    margin: 0;
+}
+
+.leaderboard-container option {
+    background-color: rgb(68, 66, 66);
+    color: white;
+    border: 0;
+    margin: 0;
+    display: inline;
+    border-radius: 0;
 }

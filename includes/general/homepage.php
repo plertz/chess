@@ -49,9 +49,9 @@
                     </ul>
                 </li>
                 <li>
-                    <h1>Stat</h1>
+                    <h1>Stats</h1>
                     <li><a href="players/players.php">Players</a></li>
-                    <li><a href="">Games</a></li>
+                    <li><a href="leaderboard/">Leaderboard</a></li>
                 </li>
             </ul>
         </nav>
