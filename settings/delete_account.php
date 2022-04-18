@@ -15,6 +15,9 @@
 </head>
 <body>
     <p>You sure you want to delete your account?</p>
+    <form style="float:left;" action="index.php">
+        <input type="submit" value="No">
+    </form>
     <form action="../includes/settings/delete.php" method="post">
         <input type="submit" value="Delete">
     </form>

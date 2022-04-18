@@ -49,7 +49,7 @@
             </tr>
         </table>
 
-        <form action="update_user_info.php" method="post">
+        <form action="update_user_data.php" method="post">
             <input name="email" type="text" value="<?=$email?>" placeholder="email">
             <select name="gender">
                 <?php

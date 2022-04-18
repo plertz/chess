@@ -5,17 +5,28 @@
                 <p class="pvp-description">
                     The classic human vs human chess matches as you know them since the birth of chess
                 </p>
-                <a href="index.html"><span>Online</span></a>
-                <a href="index.html"><span>Offline</span></a>
+                <a href="game/pvp"><span>Online</span></a>
+                <a href="game/local"><span>Local</span></a>
             </div>
         </div>
         <div class="slide">
-            <div class="bot-container">
-
+            <div class="leaderboard-container pvp-container">
+                <h1>leaderboard</h1>
+                <p class="pvp-description">
+                    See how other people do. So you can feel better about yourself!!!!!
+                </p>
+                <a href="leaderboard/"><span>leaderboard</span></a>
+                <a href="players/players.php"><span>Players</span></a>
             </div>
         </div>
         <div class="slide">
-            <div class="leaderboard-container"></div>
+            <div class="bot-container pvp-container">
+                <h1>Bot</h1>
+                <p class="pvp-description">
+                    Challenge our bot made by our best engineers!!!!!!
+                </p>
+                <a href="game/bot"><span>Play</span></a>
+            </div>
         </div>
     </div>
     <div class="slide_nav">

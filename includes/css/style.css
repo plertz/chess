@@ -87,6 +87,10 @@ button:hover {
     background-color: rgb(76, 76, 76);
 }
 
+.bot-container a {
+    grid-column: 1 / span 2;
+}
+
 
 /* slider */
 
