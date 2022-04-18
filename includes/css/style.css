@@ -731,3 +731,30 @@ select:hover {
     border: 1px solid black;
     margin-bottom: 1rem;
 }
+
+
+/* change img settings */
+
+.change-img {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.change-img input[type="file"] {
+    padding: 0.5rem;
+}
+
+.change-img input[type=submit] {
+    background-color: rgb(114, 114, 114);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
