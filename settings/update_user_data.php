@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../includes/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update user data | Chess online</title>
     <?php
@@ -17,6 +18,8 @@
     ?>
 </head>
 <body>
-    <p>Your data has been updated click <a href="index.php">here</a> to go back to the settings page</p>
+    <div class="data-update">
+        <p>Your data has been updated click <a href="index.php">here</a> to go back to the settings page</p>
+    </div>
 </body>
 </html>

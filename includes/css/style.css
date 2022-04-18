@@ -758,3 +758,48 @@ select:hover {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+
+/* delete account */
+
+.delete-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.delete-account p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.delete-account input[type=submit] {
+    background-color: rgb(114, 114, 114);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.delete-account input[type=submit]:hover {
+    text-decoration: underline;
+}
+
+.delete-account form {
+    float: left;
+    margin: 0 0.5rem;
+}
+
+
+/* data update layout */
+
+.data-update {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
