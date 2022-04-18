@@ -1,1 +1,0 @@
-<script src="../../includes/js/connection.js"></script>
