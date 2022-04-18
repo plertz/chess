@@ -701,3 +701,33 @@ select:hover {
 .settings-wrapper a:hover {
     text-decoration: underline;
 }
+
+
+/* change password */
+
+.change-password {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.change-password label {
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.change-password input {
+    display: block;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 1.6rem;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
