@@ -6,7 +6,7 @@
         <script type="text/javascript" src="includes/js/navbar.js" defer></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Chess online | home</title>
+        <title>Home | Chess online</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>

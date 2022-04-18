@@ -7,6 +7,10 @@
         if (!$loggedIn) {
             header("Location: ../auth/login");
         }
+        if (!$_GET["player"]) {
+            header("Location: ../error.php");
+        }
+        $user = $_GET["player"];
         ?>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +20,10 @@
             document.title = "<?=$_GET["player"]?> | Chess Online";
         </script>
     </head>
-    
-    <body>
         
+    <body>
+        <?php
+        include "../includes/players/details.php"
+        ?>
     </body>
 </html>

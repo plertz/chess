@@ -35,18 +35,22 @@
             </span>
         </div>
         <nav class="nav">
+            <div class="account-header">
+                <p><a href="settings/">Account</a></p>
+            </div>
+            
             <ul>
                 <li>
                     <h1>Game</h1>
                     <ul>
-                        <li><a href="index.html">PvP Online</a></li>
-                        <li><a href="index.html">Pvp Offline</a></li>
-                        <li><a href="index.html">Bot</a></li>
+                        <li><a href="game/pvp">PvP Online</a></li>
+                        <li><a href="game/offline">Pvp Offline</a></li>
+                        <li><a href="game/bot/">Bot</a></li>
                     </ul>
                 </li>
                 <li>
-                    <h1>leaderboard</h1>
-                    <li><a href="">Players</a></li>
+                    <h1>Stat</h1>
+                    <li><a href="players/players.php">Players</a></li>
                     <li><a href="">Games</a></li>
                 </li>
             </ul>

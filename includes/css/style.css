@@ -324,12 +324,31 @@ a:hover {
     color: aqua;
 }
 
-.acount-header {
+.account-header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 20vh;
+    min-height: 15vh;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+.account-header p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+}
+
+.account-header p:hover {
+    cursor: pointer;
+    background-color: rgb(83, 81, 81);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @keyframes slide_nav {

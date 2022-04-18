@@ -4,6 +4,7 @@ include "validation.php";
 function addUser($user, $pass, $conf){
     if ($pass == $conf && check_user($user)) {
         $hashed = hash_pass($pass);
+        $user = strtolower($user);
         $db = new PDO('sqlite:../../database/chess');
         $sql = "INSERT INTO users (username, password) VALUES ('$user', '$hashed')";
         $db->exec($sql);
