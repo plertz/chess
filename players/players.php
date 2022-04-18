@@ -17,41 +17,40 @@
     <title>players | Chess Online</title>
 </head>
 <body>
-<div class="nav-wrapper">
-        <div class="nav-background">
+    <div class="nav-background">
+    </div>
+    <div class="show-nav">
+        <span class="span-nav">
+            >
+        </span>
+    </div>
+    <nav class="nav">
+        <div class="account-header">
+            <p><a href="../settings/">Account</a></p>
         </div>
-        <div class="show-nav">
-            <span class="span-nav">
-                >
-            </span>
-        </div>
-        <nav class="nav">
-            <div class="account-header">
-                <p><a href="../settings/">Account</a></p>
-            </div>
-            
-            <ul>
-                <li>
-                    <h1>General</h1>
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h1>Game</h1>
-                    <ul>
-                        <li><a href="../game/pvp">PvP Online</a></li>
-                        <li><a href="../game/offline">Pvp Offline</a></li>
-                        <li><a href="../game/bot/">Bot</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h1>Stats</h1>
-                    <li><a href="../players/players.php">Players</a></li>
-                    <li><a href="../leaderboard/">Leaderboard</a></li>
-                </li>
-            </ul>
-        </nav>
+        
+        <ul>
+            <li>
+                <h1>General</h1>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                </ul>
+            </li>
+            <li>
+                <h1>Game</h1>
+                <ul>
+                    <li><a href="../game/pvp">PvP Online</a></li>
+                    <li><a href="../game/offline">Pvp Offline</a></li>
+                    <li><a href="../game/bot/">Bot</a></li>
+                </ul>
+            </li>
+            <li>
+                <h1>Stats</h1>
+                <li><a href="../players/players.php">Players</a></li>
+                <li><a href="../leaderboard/">Leaderboard</a></li>
+            </li>
+        </ul>
+    </nav>
     <?php
     include "../includes/players/searchbar.php";
     ?>

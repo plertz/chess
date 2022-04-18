@@ -588,3 +588,41 @@ select:hover {
     display: inline;
     border-radius: 0;
 }
+
+
+/* style details */
+
+.details-container {
+    max-width: 20rem;
+    box-sizing: content-box;
+    padding: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    row-gap: 5%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.details-container table {
+    grid-column: 1 /span 2;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}

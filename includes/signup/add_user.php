@@ -20,7 +20,7 @@ function addUser($user, $pass, $conf){
         $db->exec($sql);
         $sql = "INSERT INTO user_info (user_id) VALUES ('$user_id')";
         $db->exec($sql);
-        $sql = "INSERT INTO player_stats (user_id) VALUES ('$user_id')";
+        $sql = "INSERT INTO user_stats (user_id) VALUES ('$user_id')";
         $db->exec($sql);
         $db = null;
         header("location: ../../auth/login/");
