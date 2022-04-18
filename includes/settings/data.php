@@ -5,6 +5,15 @@
     $result = $db->query($sql);
     foreach ($result as $row) {
         $username = $row['username'];
+        $icon = $row['icon'];
+        $gender = $row['gender'];
+        $email = $row['email'];
+        $online_matches = $row['online_matches'];
+        $online_wins = $row['online_wins'];
+        $local_matches = $row['local_matches'];
+        $local_wins = $row['local_wins'];
+        $bot_matches = $row['bot_matches'];
+        $bot_wins = $row['bot_wins'];
     }
     $db = null;
 ?>

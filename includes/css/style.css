@@ -626,3 +626,74 @@ select:hover {
     font-size: 1.2rem;
     text-align: center;
 }
+
+
+/* settings user */
+
+.settings-wrapper {
+    max-width: 40rem;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+
+.settings-wrapper table {
+    width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.settings-wrapper h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.settings-wrapper form {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.settings-wrapper form input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(114, 114, 114);
+}
+
+.settings-wrapper form input:hover {
+    text-decoration: underline;
+}
+
+.settings-a {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.settings-wrapper a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1.1rem;
+    margin-right: 0.4rem;
+}
+
+.settings-wrapper a:hover {
+    text-decoration: underline;
+}
