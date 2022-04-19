@@ -60,8 +60,8 @@
             <li>
                 <h1>Game</h1>
                 <ul>
-                    <li><a href="../game/pvp">PvP Online</a></li>
-                    <li><a href="../game/offline">Pvp Offline</a></li>
+                    <li><a href="../game/pvp">PvP online</a></li>
+                    <li><a href="../game/local">Pvp local</a></li>
                     <li><a href="../game/bot/">Bot</a></li>
                 </ul>
             </li>
