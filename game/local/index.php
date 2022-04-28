@@ -10,13 +10,15 @@
     ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../../includes/css/style.css">
-    <script src="../../includes/js/navbar.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online |Chess online</title>
+    <title>local pvp | Chess online</title>
+    <link rel="stylesheet" href="../../includes/css/style.css">
+    <link rel="stylesheet" href="../../includes/css/chess.css">
+    <script src="../../includes/js/navbar.js" defer></script>
+    <script src="../../includes/js/chess-script.js" defer></script>
 </head>
 <body>
-    <h1 style="color: white; text-align: center;">Sorry, this game mode is currently not available:(</h1>
+    <canvas></canvas>
 
     <div class="nav-background">
     </div>
